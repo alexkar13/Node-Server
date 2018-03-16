@@ -46,6 +46,10 @@ app.get('/about', (req, res) => {
     res.render('about.hbs', properties);
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs');
+});
+
 app.use(express.static('public'));
 
 app.listen(port, () => {
